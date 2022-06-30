@@ -1,0 +1,594 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header section*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Image/Chapman-University.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2% 6%;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+nav img{
+    width:150px;
+}
+ .nav-links ul li{
+    list-style: none;
+    padding:2%;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+
+} 
+.nav-links ul li a{
+   text-decoration:none;
+   color:#fff;
+   font-size:13px;
+} 
+.nav-links ul li::after{
+content: '';
+width:0%;
+height:2px;
+display:block;
+margin: auto;
+background-color: rgb(255, 68, 68);
+transition: 0.5s;
+} 
+.nav-links ul li:hover:after{
+    width:100%;
+}
+.text-background{
+    width: 90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    text-align:center;
+}
+.text-background h1{
+    font-size:62px;
+}
+.text-background p {
+    font-size:14px;
+    margin: 10px 0 40px;
+}
+.text-background-link{
+    display: inline-block;
+    border:1px solid rgb(255, 68, 68);
+    padding:12px 34px;
+    background-color:rgb(255, 68, 68);
+    color:white;
+    font-size:13px;
+    position: relative;
+    text-decoration:none;
+}
+.text-background-link:hover{
+    background-color:whitesmoke;
+    transition: 0.5s ease-in;
+    border-color:whitesmoke;
+    color:rgb(255, 68, 68);
+}
+.nav-links .fa{
+    display: none;
+}
+nav .fa-bars{
+    display: none;
+}
+
+/* Course */
+.Course{
+    margin:auto;
+    width:80%;
+    padding-top:100px;
+}
+.Course h1{
+    font-size:36px;
+    font-weight: 600;
+    text-align: center;
+}
+.Course p{
+    font-size:22px;
+    font-weight: 300;
+   margin-top:5px;
+   
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.course-col{
+    flex-basis: 32%;
+    margin-bottom: 5%;
+    background-color:#fff3f3;
+    padding:12px 20px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.course-col h3{
+    font-size:25px;
+    font-weight: 600;
+}
+.course-col p{
+    margin-top:10px;
+    font-size:18px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/* our global compus */
+.Campus{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding:50px;
+}
+.Campus h1{
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1;
+}
+.Campus p{
+    font-size:22px;
+    font-weight: 300;
+   margin-top:5px
+}
+.Campus .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5% ;
+    
+}
+.campus-london {
+    flex:32%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+   
+}
+.campus-london img{
+    width:100%;
+    height:350px;
+    margin: 10px;
+    
+    
+}
+.layer{
+    background: transparent;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    transition: 0.5;
+}
+.layer h4{
+    width: 100%;
+    position:absolute;
+    font-weight: 600;
+    left:50%;
+    font-size:25px;
+    transform:translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgb(226,0,0,0.7);
+}
+.layer:hover h4{
+    color:white;
+    bottom: 49%;
+    opacity: 1;
+}
+.facilate{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding:90px;
+}
+.facilate h1{
+    font-size:35px;
+    text-align: center;
+  
+    
+}
+.facilate p{
+    font-size:22px;
+    font-weight: 300;
+   margin-top:5px 40px;
+}
+.facilities-content{
+   flex-basis: 31%;
+   box-sizing: border-box;
+    text-align: left;
+    border-radius: 10px;
+
+}
+.word-class-libery{
+    margin:5px;
+}
+.facilate img{
+width:100%;
+height:250px;
+margin:10px;
+}
+.facilities-content .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top:3%;
+}
+.content h3{
+    font-size:20px;
+}
+/* mission and vison*/
+.Mission{
+    width: 80%;
+    margin: auto;
+}
+.Mission h1{
+    font-size:1.9rem;
+    text-align:center;
+}
+.Mission h4{
+    line-height: 2;
+}
+.mission-Icon img{
+    width:50%;
+    margin: auto;
+}
+.mission-Icon{
+    margin: 10px;
+}
+.Mission .row{
+    display:block;
+   line-height: 2;
+    
+}
+.Mission-sub-content h2{
+    font-size: 19px;
+    text-align: left;
+}
+.content-item{
+    border:1px solid #eeeeee40;
+    display: flex;
+    background-color: #eeeeee40;
+    justify-content: space-between;
+    width:100%;
+    padding:20px;
+}
+.Vision-content{
+    margin-top:20px;
+}
+.Vision-content p{
+    font-size: 18px;
+}
+.content-text{
+    border:1px solid #eee;
+    width:100%;
+    padding:10px;
+    transition: 2s;
+}
+/* university-statement*/
+.university-statement{
+    width:80%;
+    margin: auto;
+    padding:50px;
+}
+/* Testimonies */
+.Testimonies{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding:40px;
+}
+.Testimonies.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:5%;
+}
+.testimonies-content{
+    flex-basis: 33%;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    background-color:#fff3f3;
+    padding:25px;
+    width:100%;
+    box-sizing: border-box;
+
+}
+.testimonies-content img{
+    width:40px;
+    height:50px;
+    border-radius:50%;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.Testimonies h1{
+    font-size:30px;
+    line-height: 2;
+}
+.testimonies-content img:hover{
+    background-color:black
+
+}
+/* ----- call-action*/
+.call-action{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/Image/university\ student.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 120px auto;
+    text-align: center;
+    font-size:22px;
+    padding:100px 0;
+    color:white;
+
+}
+.contact {
+    border:1px solid rgb(255, 68, 68);
+    background-color: rgb(255, 68, 68);
+    padding:10px;
+    text-decoration: none;
+    margin-top:20px;
+    color:white;
+    border-radius: 8px;
+    transition: 0.5s ease-in;
+}
+.contact:hover{
+    background-color: white;
+    color:rgb(255, 68, 68);
+    border-color: white;
+}
+/*-----footer-------*/
+.footer{
+    width:80%;
+    margin: auto;
+    padding:30px;
+}
+.footer .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:20px;
+
+}
+.footer h2{
+    font-size: 18px;
+    line-height: 2;
+}
+.Useful-Link ul li {
+    margin: 2px;
+    list-style: none;
+
+}
+.Useful-Link ul li a{
+    text-decoration: none;
+    color:black
+}
+.footer ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.Useful-Link ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    display:block;
+    background-color: rgb(255, 68, 68);
+    margin: auto;
+    transition: 0.5s;
+}
+.Useful-Link ul li.hover::after{
+    width:100%;
+}
+
+.footer .fa{
+    cursor: pointer;
+}
+/*--- copywrite*/
+.copywrite{
+    border: 1px solid black;
+    background-color: black;
+   
+}
+.copywrite h5{
+    padding:10px;
+}
+.copywrite .fa{
+    position:sticky;
+    top:50%;
+    left: 1230px;
+    transform: translate(-50%,-50%);
+    color:white;
+    background-color: rgb(255, 68, 68);
+    padding:10px;
+    cursor: pointer;
+    border-radius: 3px;
+  
+}
+.copywrite a{
+    scroll-behavior: smooth;
+}
+.contenttext3{
+    display: none;
+}
+@media(max-width: 960px){
+    .facilate h3{
+        font-size:15px;
+    }
+}
+@media(max-width: 820px){
+    .facilate h3{
+        font-size:15px;
+    }
+}
+
+@media(max-width:700px){
+    body{
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    
+       .text-background h1{
+        font-size:20px;
+    }
+    .text-background p{
+        font-size: 13px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background-color:rgb(255, 68, 68);
+        height: 100vh;
+        width:200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+       margin:10px;
+       font-size:22px;
+       color:white
+    }
+    .nav-links ul li a{
+        margin:10px;
+    }
+    .nav-links ul{
+      padding:20px;
+    }   
+    .nav-links .fa{
+        color: white;
+        font-size: 22px;
+        display: block;
+        margin: 10px;
+        margin-right: 150px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .row{
+        flex-direction: column;
+        margin-top:50px;
+    }
+    .Campus .row{
+        padding: 10px;
+        width:100%;
+        position: relative;
+        right: 19px;
+
+     }
+    .Campus h1{
+        font-size:34px;
+        
+    }.campus-london{
+        margin:20px 0 0;
+    }
+    .Campus .row{
+    margin-right: 30px;
+    }  
+    .content-item{
+        margin-top:50px;
+    }
+    .Testimonies.row{
+        margin-right:20px;
+
+    }
+    .facilities-content .row {
+        position: relative;
+        right: 50px;
+    }
+    .facilate h1{
+        text-align:center;
+        position: relative;
+        right: 50px 
+        
+    }
+    .FacilitiesPara {
+        text-align: left;
+        font-size:18px;
+        position: relative;
+        right:20px;
+    };
+    .facilate{
+        position: relative;
+        bottom: 40px;
+    }
+   
+    .word-class-libery{
+        margin:5px;
+        padding:10px
+    }
+    .Testimonies h1{
+        font-size:25px;
+    }
+    .Testimonies {
+        position: relative;
+        bottom: 70px;;
+    }
+ .call-action h1{
+    font-size:21px;
+ }
+ .Mission h1{
+   font-size:25px
+ }
+ .content-item{
+ padding: 10px;
+ }
+ .Mission h4{
+    padding:10px 0 0;
+ }
+ .university-statement{
+    position: relative;
+    right: 16px;
+    bottom: 70px;
+    margin: 0 0 0;
+ }
+
+ .School-Contact ul li{
+    margin: 30px 0 ;
+ }
+ .School-Contact{
+    margin:20px 0;
+}
+.School-Contact .fa{
+    cursor: pointer;
+}
+ .Useful-Link{
+    position: relative;
+    bottom: 5px;
+ }
+ .copywrite a{
+    display: none;
+ }
+}
