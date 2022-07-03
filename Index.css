@@ -55,6 +55,13 @@ transition: 0.5s;
 .nav-links ul li:hover:after{
     width:100%;
 }
+.nav-links .fa{
+    display: none;
+}
+nav .fa-bars{
+    display: none;
+}
+
 .text-background{
     width: 90%;
     position:absolute;
@@ -86,12 +93,6 @@ transition: 0.5s;
     transition: 0.5s ease-in;
     border-color:whitesmoke;
     color:rgb(255, 68, 68);
-}
-.nav-links .fa{
-    display: none;
-}
-nav .fa-bars{
-    display: none;
 }
 
 /* Course */
@@ -255,9 +256,6 @@ margin:10px;
 .Mission h1{
     font-size:1.9rem;
     text-align:center;
-}
-.Mission h4{
-    line-height: 2;
 }
 .mission-Icon img{
     width:50%;
