@@ -15,7 +15,6 @@ nav {
     align-items: center;
     padding: 2% 6%;
 }
-
 .nav-links {
     flex: 1;
     text-align: right;
@@ -451,7 +450,6 @@ nav .fa-bars {
     margin: auto;
     transition: 0.5s;
 }
-
 .Useful-Link ul li.hover::after {
     width: 100%;
 }
@@ -641,7 +639,7 @@ nav .fa-bars {
 
 .Testimonies {
     position: relative;
-    bottom: 70px;
+    bottom: 100px;
     
 }
 
@@ -655,13 +653,12 @@ nav .fa-bars {
 
 .Mission {
     position: relative;
-    bottom: 80px;
+    bottom: 125px;
 }
 
 .content-item {
     padding: 10px;
 }
-
 .Mission h4 {
     padding: 10px 0 0;
 }
@@ -669,7 +666,7 @@ nav .fa-bars {
 .university-statement {
     position: relative;
     right: 16px;
-    bottom: 70px;
+    bottom: 110px;
     margin: 0 0 0;
 }
 
