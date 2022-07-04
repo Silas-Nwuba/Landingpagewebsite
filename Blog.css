@@ -10,9 +10,9 @@ body{
 }
 /* header section*/
 .header{
-    min-height: 50vh;
+    min-height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Image/chapUniversity.JPG");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Image/chapUniversity.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -181,11 +181,15 @@ nav img{
     }
     .nav-links ul li {
         display: block;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        margin: 23px;
     }
+
     .nav-links{
         position:absolute;
         background-color:rgb(255, 68, 68);
-        height: 50vh;
+        height: 70vh;
         width:200px;
         top: 0;
         right: -200px;

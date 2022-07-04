@@ -8,12 +8,11 @@ html{
 body{
     background-color: #eee !important;
 }
-
 /* header section*/
 .header{
-    min-height: 50vh;
+    min-height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Image/chapUniversity.JPG");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Image/chapUniversity.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -22,7 +21,6 @@ body{
     display:flex;
     justify-content: space-between;
     padding:2%  6%;
-
 }
 .nav-links{
     flex:1;
@@ -42,30 +40,30 @@ nav img{
 
 } 
 .nav-links ul li a{
-   text-decoration:none;
-   color:#fff;
-   font-size:13px;
-} 
-.nav-links ul li::after{
-    content: '';
-    width:0%;
-    height:2px;
-    display:block;
-    margin: auto;
-    background-color: rgb(255, 68, 68);
-    transition: 0.5s;
-} 
-    .nav-links ul li:hover:after{
-        width:100%;
-    }
-    .nav-links .fa{
-        display: none;
-
-    }
-    nav .fa-bars{
-        display: none;
-    }
-    .text-background{
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+ } 
+ .nav-links ul li::after{
+     content: '';
+     width:0%;
+     height:2px;
+     display:block;
+     margin: auto;
+     background-color: rgb(255, 68, 68);
+     transition: 0.5s;
+    } 
+     .nav-links ul li:hover:after{
+         width:100%;
+     }
+     .nav-links .fa{
+         display: none;
+ 
+     }
+     nav .fa-bars{
+         display: none;
+     }
+     .text-background{
         width:90%;
         text-align: center;
         position:absolute;
@@ -210,11 +208,15 @@ nav img{
         }
         .nav-links ul li {
             display: block;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            margin: 23px;
         }
+    
         .nav-links{
             position:absolute;
             background-color:rgb(255, 68, 68);
-            height: 50vh;
+            height: 70vh;
             width:200px;
             top: 0;
             right: -200px;
