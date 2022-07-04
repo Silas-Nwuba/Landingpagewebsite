@@ -9,14 +9,6 @@ body{
     background-color: #eee;
 }
 /* header section*/
-.header{
-    min-height: 70vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Image/chapUniversity.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
 .nav {
     display:flex;
     justify-content: space-between;
