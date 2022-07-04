@@ -12,7 +12,7 @@ html {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/chapUniversity.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("Image/chapUniversity.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -400,7 +400,7 @@ nav .fa-bars {
 /* ----- call-action*/
 .call-action {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/universitystudent.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Image/universitystudent.jpg");
     background-position: center;
     background-size: cover;
     height: 120px auto;
