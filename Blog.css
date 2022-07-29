@@ -89,6 +89,7 @@ nav img{
 .footer{
     background-color: black;
     margin-top:60px;
+    padding: 30px;
 }
 .footer-content h4{
     font-size:20px;
@@ -145,14 +146,14 @@ nav img{
     width:100%;
     color:red;
 }
-.copywrite .fa{
+/* .copywrite .fa{
     background-color: rgb(255, 68, 68);
     border-radius : 3px;
     padding:10px;
     position: relative;
     bottom: 10px;
    
-}
+} */
 .chevron{
    margin-left: 90% ;
 }
@@ -228,7 +229,5 @@ nav img{
     .Useful-Link{
         margin-top:40px;
     }
-    .footer{
-        height: 850px;
-    }
+
 }

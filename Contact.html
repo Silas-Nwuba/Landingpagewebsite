@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width,initial-scale=1.0">
@@ -10,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -21,7 +21,6 @@
     background-size: cover;
     background-position: center;
     position: relative">
-    
         <nav class="nav">
             <a href=""><img src="Image/chapman-university-removebg-preview.png"></a>
             <div class="nav-links" id="navLink">
@@ -45,35 +44,42 @@
         <div class="row">
             <div class="contact-content"style="width:100%">
                 <h2>Contact us</h2>
-                <form>
+                <form id="form">
+                    <div class="form-content">
                     <div class="form-group">
                         <label for="Name">Name <i class="fa fa-asterisk"style="color:red;font-size:8px"></i></label>
-                        <input type="text" class="form-control" name=""required id="" aria-describedby="helpId" placeholder="">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <small></small>
                     </div>
                     <div class="form-group">
-                        <label for="Email">Email <i class="fa fa-asterisk"style="color:red;font-size:8px"></i></label>
-                        <input type="email" class="form-control"required  name="" id="" aria-describedby="helpId" placeholder="">
+                        <label for="text">Email <i class="fa fa-asterisk"style="color:red;font-size:8px"></i></label>
+                        <input type="text" class="form-control"name="" id="email" aria-describedby="helpId" placeholder="Enter your email">
+                        <small></small>
                     </div>
                     <div class="form-group">
                         <label for="Telephone">Telephone <i class="fa fa-asterisk"style="color:red;font-size:8px"></i></label>
-                        <input type="number" class="form-control"required  name="" id="" aria-describedby="helpId" placeholder="">
+                        <input type="text" class="form-control"name="" id="Telephone" aria-describedby="helpId" placeholder="Enter your Phone Number">
+                        <small></small>
                     </div>
                     <div class="form-group">
                         <label for="Message">Message <i class="fa fa-asterisk"style="color:red;font-size:8px"></i></label>
-                        <input type="text" class="form-control"required  name="" id="Message" aria-describedby="helpId" placeholder="">
+                        <input type="text" class="form-control"name="" id="Message" aria-describedby="helpId" placeholder="Message us here...">
+                        <small></small>
+                    </div><br>
+                    <button type="submit" class="btn">Submit</button>
                     </div>
-                    <button type="submit" class="btn btn-info">Submit</button>
                 </form>
+                <!-- <button class="btn"onclick="smptFunction()">Smtp</button> -->
             </div>
             <div class="contact-content">
                 <h2>Contact info</h2>
                 <div class="contact-sub-content">
                     <ul>
                         <li>
-                            <i class="fa fa-phone"></i> +222- 09090923
+                            <i class="fa fa-phone"></i> +2349126576061
 
                         </li>
-                        <li> <i class="fa fa-envelope"></i> Info@ChapmanUni.edu.uk</li>
+                        <li> <i class="fa fa-envelope"></i> Info@ChapmanUni.edu.ng</li>
                         <li><i class="fa fa-map-marker"></i> William mosh Road</li>
                     </ul>
                     <div class="social">
@@ -123,7 +129,7 @@
                     <ul>
                         <h3 style="color: white">CHAPMAN UNIVERSITY </h3>
                         <li>Addrees: William mosh Road</li>
-                        <li>Tel: +222- 09090923</li>
+                        <li>Tel: +2349126576061</li>
                         <li>Website: www.chapman.edu.ng</li>
     
                     </ul>
@@ -137,7 +143,7 @@
                 <div class="Useful-Link">
                     <h2>Useful-Link</h2>
                     <ul>
-    
+
                         <li><a href="Index.html">Home</a></li>
                         <li><a href="About.html">About Us</a></li>
                         <li><a href="FAQS.html">FAQ</a></li>
@@ -146,17 +152,18 @@
     
                     </ul>
                 </div>
-            </div><br>
-            <section class="copywrite">
-                <p style="text-align:center;color:white">&copy; 2022 -All Right Reserved Chapman University.powered by NWUBA SILAS</p>
-                <div class="chevron" style="color:white">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                </div>
-            </section>    
+            </div>
+            <div class="copywrite">
+                <br><br>
+                <p style="text-align:center;color:white;font-size:13px;">&copy; 2022-All Right Reserved Chapman University.powered by NWUBA SILAS</p>
+            </div> 
+            
         </section>
+         
       
     </section>
-        
-            <script src="Contact.js" type="text/Javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="Contact.js" type="text/Javascript"></script>
 </body>
 </html>

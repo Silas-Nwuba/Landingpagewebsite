@@ -75,6 +75,20 @@ nav img{
     font-size:25px;
     margin: 20px;
 }
+.contact .btn{
+    background-color: #128fcb;
+    color:white;
+    font-size:15px;
+    margin-top:3px;
+}
+.contact .btn:hover{
+    background-color: #4d4d7c;
+    transition: 1s ease-in;
+    color:white;
+}
+.contact .btn:focus{
+outline: none;
+}
 .contact{
     width:80%;
     margin:auto;
@@ -104,6 +118,7 @@ nav img{
 position: relative;
 left:20px;
 margin: 5px;
+cursor: pointer;
 }
 /*--- Message*/
 #Message{
@@ -122,6 +137,8 @@ margin: 5px;
 .footer{
     background-color: black;
     margin-top:60px;
+    padding :30px;
+
 }
 .footer-content h4{
     font-size:20px;
@@ -178,17 +195,39 @@ margin: 5px;
     width:100%;
     color:red;
 }
-.copywrite .fa{
+/* .copywrite .fa{
     background-color: rgb(255, 68, 68);
     border-radius : 3px;
     padding:10px;
     position: relative;
     bottom: 10px;
    
-}
+} */
 .chevron{
    margin-left: 90% ;
 }
+/* form-group small*/
+.form-group small{
+    visibility:hidden;
+}
+ /*form-group error*/
+ .form-group-error input{
+    border:2px solid red;
+}
+.form-group-error small{
+    color:red;
+    font-size : 14px;
+    line-height: 2;
+    visibility: visible;
+}
+/* form-group success*/
+.form-group-success input{
+border:1px solid green;
+}
+.form-group-success small{
+  visibility: hidden;
+    }
+
 @media(max-width:700px)
 {
      body{
@@ -231,9 +270,10 @@ margin: 5px;
         border-bottom: 1px solid #eee;
         text-align: center;
         margin: 23px;
+        position: relative;
+        bottom:27px;
 
     }
-    
     .nav-links ul li a{
         margin:10px;
     }
@@ -263,14 +303,29 @@ margin: 5px;
     width:100%;
     margin-right:30px;
     }
-    /*-- footer---*/
-    .copywrite .fa{
-        display: none;
+    .form-group small{
+        visibility: hidden;
     }
+    /*form-group error*/
+    .form-group-error input{
+        border:2px solid red;
+    }
+    .form-group-error small{
+        color:red;
+        font-size : 16px;
+        line-height: 2;
+        visibility: visible;
+    }
+    /* form-group success*/
+    .form-group-success input{
+    border:1px solid green;
+    }
+    .form-group-success small{
+      visibility: hidden;
+        }
+    /*-- footer---*/
     .Useful-Link{
         margin-top:40px;
     }
-    .footer{
-        height: 850px;
-    }
+    
     }
