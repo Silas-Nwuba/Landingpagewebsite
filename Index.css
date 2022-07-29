@@ -18,6 +18,7 @@ nav {
 .nav-links {
     flex: 1;
     text-align: right;
+   
 }
 
 nav img {
@@ -485,7 +486,7 @@ nav .fa-bars {
     scroll-behavior: smooth;
 }
 
-@media(max-width: 960px) {
+/* @media(max-width: 960px) {
     .facilate h3 {
         font-size: 15px;
     }
@@ -495,12 +496,9 @@ nav .fa-bars {
     .facilate h3 {
         font-size: 15px;
     }
-}
+} */
 
 @media(max-width:700px) {
-    body {
-        overflow-x: hidden;
-    }
 
     html {
         overflow-x: hidden;
@@ -536,7 +534,9 @@ nav .fa-bars {
         display: block;
         margin: 10px;
         font-size: 22px;
-        color: white
+        color: white;
+        cursor: pointer;
+    
     }
 
     .nav-links ul li a {
