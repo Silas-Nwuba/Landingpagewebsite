@@ -133,6 +133,28 @@ cursor: pointer;
     width:100%;
     margin-top:30px;
 }
+/* form-group small*/
+.form-group small{
+    visibility:hidden;
+}
+ /*form-group error*/
+ .form-group-error input{
+    border:2px solid red;
+}
+.form-group-error small{
+    color:red;
+    font-size : 14px;
+    line-height: 2;
+    visibility: visible;
+}
+/* form-group success*/
+.form-group-success input{
+border:1px solid green;
+}
+.form-group-success small{
+  visibility: hidden;
+    }
+
 /*--- footer-----*/
 .footer{
     background-color: black;
@@ -206,27 +228,6 @@ cursor: pointer;
 .chevron{
    margin-left: 90% ;
 }
-/* form-group small*/
-.form-group small{
-    visibility:hidden;
-}
- /*form-group error*/
- .form-group-error input{
-    border:2px solid red;
-}
-.form-group-error small{
-    color:red;
-    font-size : 14px;
-    line-height: 2;
-    visibility: visible;
-}
-/* form-group success*/
-.form-group-success input{
-border:1px solid green;
-}
-.form-group-success small{
-  visibility: hidden;
-    }
 
 @media(max-width:700px)
 {
